@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="750.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.ClientController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="157.0" layoutY="14.0" prefHeight="98.0" prefWidth="438.0" text="CLIENT">
+         <font>
+            <Font name="System Bold" size="35.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtView" editable="false" layoutX="27.0" layoutY="122.0" prefHeight="506.0" prefWidth="697.0" />
+      <TextField fx:id="txtMsg" layoutX="27.0" layoutY="649.0" prefHeight="55.0" prefWidth="549.0" promptText="message">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <JFXButton alignment="CENTER" buttonType="RAISED" contentDisplay="CENTER" layoutX="585.0" layoutY="649.0" onAction="#btnSendOnAction" prefHeight="55.0" prefWidth="139.0" style="-fx-background-color: #978f8f;" text="SEND">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
